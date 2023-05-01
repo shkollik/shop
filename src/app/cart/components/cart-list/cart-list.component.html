@@ -1,0 +1,14 @@
+<ng-container *ngIf="cartItems.length">
+    <div>Items in cart:</div>
+    <ul>
+         <li *ngFor="let cartItem of cartItems; trackBy: trackByProducts">
+            <p>Name: {{ cartItem.name }}</p>
+            <p>Price: {{ cartItem.price }}</p>
+            <p>Available: {{ cartItem.isAvailable}}</p>
+          </li> 
+    </ul>
+  </ng-container>
+  
+  <ng-container *ngIf="!cartItems.length">
+    <div>Cart is empty</div>
+  </ng-container>
