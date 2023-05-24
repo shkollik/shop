@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { ProductModel } from '../../models/product.model';
 import { ProductService } from '../../services/product.service';
 
@@ -15,6 +15,13 @@ export class ProductListComponent {
   ngOnInit(){
     this.products = this.productService.getProducts();
   }
+
+  onAddToCart(product: ProductModel){
+    console.log(`${product.name} added to cart`);
+
+  }
+
+
 
 
 }
