@@ -18,5 +18,5 @@
 - added @Outputs quantityIncrease, quantityDecrease, deleteItem and according methods in Cart service
 - added template reference #appTitle and declared it via (@ViewChild('appTitle') appTitle!: ElementRef<HTMLHeadingElement>), assigned it in method ngAfterViewInit()
 - added highlight directive via @HostListener
-
+<!-- OK -->
 
